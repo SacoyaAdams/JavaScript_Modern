@@ -7,29 +7,31 @@
 //
 
 const displayResults = (personList, count) => {
-    let count = 0;
-    count = personList.length;
-    console.table(personList);
-    console.log("There are " + count + " people in the list.");
-}
+	var count = 0;
+	count = personList.length;
+	console.table(personList);
+	console.log('There are ' + count + ' people in the list.');
+};
 
 const getData = (tableName) => {
-  let retval = "No Data";
-  if (tableName == "person") {
-    retval = [
-      { firstName: "Alice", lastName: "Jones", age: 10 },
-      { firstName: "Bob", lastName: "Smith", age: 7 },
-      { firstName: "Charlie", lastName: "Thumb", age: 5 },
-    ];
-  }
-  return retval;
-}
+	let retval = 'No Data';
+	if (tableName == 'person') {
+		retval = [
+			{ firstName: 'Alice', lastName: 'Jones', age: 10 },
+			{ firstName: 'Bob', lastName: 'Smith', age: 7 },
+			{ firstName: 'Charlie', lastName: 'Thumb', age: 5 },
+		];
+	}
+	return retval;
+};
 
-const main() => {
-  let table = "person";
-  let personList = getData(table);
-  personList.sort(function(a,b){return a.age - b.age});
-  displayResults(personList);
-}
+const main = () => {
+	let table = 'person';
+	let personList = getData(table);
+	personList.sort(function (a, b) {
+		return a.age - b.age;
+	});
+	displayResults(personList);
+};
 
 main();
