@@ -19,8 +19,11 @@ const ex1 = () => {
     console.log(countNumbers(testCaseArray1));
 }
 
-const ex2 = () => {
-    // TODO...
+const ex2= () => {
+    // TODo
+const array = [12, 55, 2, 22, 11];
+console.log(minNumber(array));
+ 
 }
 
 const ex3 = () => {
@@ -31,6 +34,19 @@ const ex3 = () => {
 // Your functions here...
 //
 
+const minNumber = (array)=> {
+    let lowestNumber = array[0];
+    for (let i= 0; i < array.length; i++){
+    if(array[i] < lowestNumber){
+        lowestNumber =array[i];
+    }
+   
+}
+return lowestNumber
+}
+
+
+
 const countNumbers = (array) => {
     let retval = 0;
     // TODO...
@@ -38,7 +54,7 @@ const countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex1();
+    ex2();
 }
 
 main();
