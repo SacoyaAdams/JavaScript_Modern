@@ -28,11 +28,32 @@ console.log(minNumber(array));
 
 const ex3 = () => {
     // TODO...
+   
+// console.log(interleave(array1, array2));
 }
 
 //
 // Your functions here...
 //
+const array1 = [1, 2, 3, 4, 5,];
+const array2 = ['a', 'b', 'c', 'd', 'e'];
+const interleave = (array1, array2) => {
+    
+    //if length of array1 and array2 is not the same, it will print out the string "ERROR: Array Length mismatch"
+if(array1.length !== array2.length){
+    return 'ERROR: Array Length mismatch'
+}
+let result = '';
+for(let i= 0; i< array1.length; i++)
+result += array1[i]+ array2[i]
+
+return result
+}
+console.log(interleave(array1, array2));
+
+
+
+
 
 const minNumber = (array)=> {
     let lowestNumber = array[0];
@@ -54,7 +75,7 @@ const countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex2();
+    ex3();
 }
 
 main();
