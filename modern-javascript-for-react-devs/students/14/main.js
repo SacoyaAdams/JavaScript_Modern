@@ -37,7 +37,7 @@ const ex4 = () => {
     console.log(palindrome('radar'));
     console.log(palindrome('month')); 
     //This is a test console.log(palindrome('mom'));
-   // This is a test console.log(palindrome('sacoya'));
+    console.log(palindrome('house'));
 }
 
 //
