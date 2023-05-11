@@ -30,9 +30,31 @@ const ex3 = () => {
     // TODO...
 }
 
+const ex4 = () => {
+    //ToDo
+    let word = "radar";
+    //let word2 = "month";
+    console.log(palindrome('radar'));
+    console.log(palindrome('month')); 
+    //This is a test console.log(palindrome('mom'));
+   // This is a test console.log(palindrome('sacoya'));
+}
+
 //
 // Your functions here...
 //
+
+const palindrome = (word)=> {
+    for(let i=0; i<word.length; i++){
+        if(word[i]== word[word.length-1-i]){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+}
+
 
 const minNumber = (array)=> {
     let lowestNumber = array[0];
@@ -54,7 +76,7 @@ const countNumbers = (array) => {
 }
 
 const main = async () => {
-    ex2();
+    ex4();
 }
 
 main();
